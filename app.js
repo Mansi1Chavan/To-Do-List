@@ -19,15 +19,14 @@ btn.addEventListener('click', function () {
 
     let element1 = document.createElement('li');
     let element2 = document.createElement('li');
-    let element3 = document.createElement('li3');
+    let element3 = document.createElement('li');
     let btn1 = document.createElement('button');
 
 
     ul.style.display='flex';
-    ul.style.justifyContent='center';
-    ul.style.alignItems='center';
-    
-    element1.style.marginLeft = "90px";
+    // ul.style.flexDirection='column';
+    // ul.style.alignItems='center';
+    ul.style.marginLeft = "90px";
 
     
     element1.innerText = input1;
@@ -39,8 +38,8 @@ btn.addEventListener('click', function () {
     element1.style.fontSize = "25px";
     element1.style.borderRadius = "5px";
     element1.style.backgroundColor = "gray"
-    element1.style.width = "20rem"
-    element1.style.marginRight = "15px";
+    element1.style.width = "21.5rem"
+    element2.style.marginLeft = "10px";
     element1.style.textAlign = "center";
 
 
@@ -48,21 +47,25 @@ btn.addEventListener('click', function () {
     element2.style.fontSize = "25px";
     element2.style.borderRadius = "5px";
     element2.style.backgroundColor = "gray"
-    element2.style.width = "20rem"
+    element2.style.width = "21.5rem"
     element2.style.textAlign = "center";
+    element2.style.marginLeft = "10px";
+
 
     element3.style.border='4px solid maroon';
     element3.style.fontSize = "25px";
     element3.style.borderRadius = "5px";
     element3.style.backgroundColor = "gray"
-    element3.style.width = "20rem"
-    element2.style.textAlign = "center";
+    element3.style.width = "21.5rem"
+    element3.style.textAlign = "center";
+    element3.style.marginLeft = "10px";
 
 
     btn1.style.backgroundColor="red";
     btn1.style.fontSize="25px";
     btn1.style.backgroundColor="red";
     btn1.style.position= "absolute";
+    btn1.style.right= "120px";
     btn1.style.textAlign = "center";
 
 
@@ -73,8 +76,8 @@ btn.addEventListener('click', function () {
     ul.appendChild(element2);
     ul.appendChild(element3);
     element1.appendChild(btn1);
-    element2.appendChild(btn1);
-    element3.appendChild(btn1);
+    // element2.appendChild(btn1);
+    // element3.appendChild(btn1);
 
     //adding functionality to button
 
